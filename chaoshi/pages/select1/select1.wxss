@@ -1,0 +1,171 @@
+/* pages/select1/select1.wxss */
+
+/* pages/add/add.wxss */
+.fuhao{
+  position: fixed;
+  bottom: 80rpx;
+  right: 60rpx;
+  width:84rpx;
+height:84rpx;
+background:rgba(255,255,255,1);
+border:2px solid rgba(230,230,230,1);
+box-shadow:0px 4rpx 16rpx 0px rgba(0, 0, 0, 0.08);
+border-radius:50%;
+text-align: center;
+  line-height: 80rpx;
+  overflow: hidden
+
+}
+.fuhao>image{
+  width: 60rpx;
+  height: 60rpx;
+margin-top: 10rpx;
+
+}
+.top{
+   margin: 0 auto;
+  width: 94%;
+  height: 230rpx;
+  background: #fff;
+  position: relative;
+  margin-bottom: 30rpx
+}
+.top>.in{
+  overflow: hidden;
+    height: 155rpx;
+}
+.name{
+  position: absolute;
+  font-size:28rpx;
+font-family:PingFang SC;
+font-weight:bold;
+color:rgba(51,51,51,1);
+left: 0 ;
+top: 20rpx;
+}
+.phone{
+  font-size:28rpx;
+font-family:PingFang SC;
+font-weight:bold;
+color:rgba(51,51,51,1);
+  position: absolute;
+
+left: 124rpx; 
+top: 20rpx;
+}
+.tag{
+  text-align: center;
+  display: block;
+  width:68rpx;
+height:28rpx;
+background:rgba(249,50,81,0.1);
+/* opacity:0.1; */
+border-radius:4rpx;
+  position: absolute;
+
+right: 280rpx; 
+top: 20rpx;
+font-size:22rpx;
+font-family:PingFang SC;
+font-weight:500;
+color:rgba(249,50,81,1);
+}
+.address{
+  display: block;
+  width: 15rpx;
+  height: 30rpx;
+    position: absolute;
+
+right: 0rpx; 
+top: 67rpx;
+
+}
+.ko{
+  font-size:24rpx;
+font-family:PingFang SC;
+font-weight:400;
+color:rgba(51,51,51,1);
+    position: absolute;
+
+left: 0rpx; 
+width: 97%;
+display: block;
+top: 74rpx;
+}
+.bom{
+  width: 100%;
+  height: 4rpx;
+   position: absolute;
+   bottom: 0;
+   left: 0
+}
+.xuanze{
+  position: absolute;
+  width: 94%;
+  height: 28rpx;
+  left: 3%;
+  bottom: 20rpx;
+  display: flex;
+  justify-content: space-between
+}
+.xuanze>.rideo{
+width: 200rpx;
+height: 100%;
+font-size:26rpx;
+font-family:PingFang SC;
+font-weight:500;
+color:rgba(102,102,102,1);
+}
+.xuanze>.rideo>radio{
+  width: 24rpx;
+  height: 24rpx;
+}
+radio .wx-radio-input{
+border-radius: 50%; 
+width: 24rpx;
+height: 24rpx;
+position: relative;
+top: -4rpx
+}
+
+.edit{
+  width: 110rpx;
+  height: 100%;
+    display: flex;
+  justify-content: space-between;
+  float: right;
+  margin-right: 0
+}
+.edit>view{
+width: 90rpx;
+height: 100%;
+font-size:26rpx;
+font-family:PingFang SC;
+font-weight:500;
+color:rgba(102,102,102,1);
+}
+.edit>view>image{
+  width: 28rpx;
+  height: 28rpx;
+
+}
+
+button{
+  padding: 0;
+  margin: 0;
+  width:360rpx;
+height:68rpx;
+background:rgba(243,177,0,1);
+box-shadow:0px 4px 6px 0px rgba(243,177,0,0.5);
+border-radius:34rpx;
+position: fixed!important;
+bottom: 88rpx;
+left: 50%!important;
+margin-left: -180rpx!important;
+font-size:32rpx;
+font-family:PingFang SC;
+font-weight:bold;
+color:rgba(255,255,255,1);
+text-align: center;
+line-height: 68rpx;
+}

@@ -1,0 +1,26 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <view class="main">
+    <view class="ul">
+      <view class="in">
+        <image src="{{api}}{{icon}}"></image>
+        <text>{{name}}</text>
+      </view>
+    </view>
+
+  </view>
+  <text>Tips：到平台兑换的购物卡全国通用，送货上门(只限江西境内)</text>
+
+  <view class="pay">
+    <text>兑换面值</text>
+
+
+    <view class="button">
+ 
+
+          <text wx:for="{{leng1}}"  data-id='{{item.id}}' data-price="{{item.specName}}" bindtap="clicktap" class='{{item.checked?"checked_button":"normal_button"}}'  >{{item.specName}}</text>
+    </view>
+
+  </view>
+  <button bindtap="address" >确认兑换</button>
+</view>

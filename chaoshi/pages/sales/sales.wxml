@@ -1,0 +1,34 @@
+<!--pages/sales/sales.wxml-->
+<view class="container">
+<view class="top">
+<view class="in">
+<view class="left">
+<text class="yue">余额</text>
+<text>￥999.99</text>
+</view>
+<view class="right">
+<button>提现</button>
+<text>昨日+￥88.88</text>
+</view>
+</view>
+</view>
+
+
+<view class="detail">
+<view class="title"> 
+<text>余额明细</text>(记录每日分销赚取的佣金和提现)
+
+
+</view>
+
+<view class="list">
+<view class="result">
+<text>某某某在您分享的商品链接付款成功</text>
+<text>2019-01-05</text>
+</view>
+<view class="mon">
+<text>+￥3.66</text>
+</view>
+</view>
+</view>
+</view>

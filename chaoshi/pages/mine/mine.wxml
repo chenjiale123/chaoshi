@@ -1,0 +1,50 @@
+<view class="container">
+
+<view class="bj">
+ <image src="../../image/bj@2x.png"></image>
+  <view class="message">
+  <image src="{{api}}{{icon}}"></image>
+  <text class="nc">{{name}}</text>
+    <text class="phone">手机号： 123456789</text>
+  <text class="id">提货豆：{{balance}}</text>
+
+  
+  </view>
+</view>
+
+<view class="nav">
+<view class="in">
+<view class="order" bindtap="recharge">
+<text>提货豆充值</text>
+<image src="../../image/grayjump@2x.png"></image>
+</view>
+<view class="address" bindtap="record">
+<text>兑换记录</text>
+<image src="../../image/grayjump@2x.png"></image>
+</view>
+<view class="sales" bindtap="order">
+<text >购物卡订单</text>
+<image src="../../image/grayjump@2x.png"></image>
+</view>
+<view class="record" bindtap="address">
+<text >收货地址</text>
+<image src="../../image/grayjump@2x.png"></image>
+</view>
+<view class="service" bindtap="sales">
+<text >在线客服</text>
+<contact-button  size="10" session-from="weapp"></contact-button>
+<!-- <image src="../../image/grayjump@2x.png"></image> -->
+</view>
+</view>
+
+</view>
+
+
+<!-- <view class="footer">
+<view class="footIn">
+   <text bindtap="index" >兑换超市</text> <text>|</text>
+       <text bindtap="shop">商城</text> <text>|</text>
+      <text  class="etc">个人中心</text> 
+</view>
+</view> -->
+</view>

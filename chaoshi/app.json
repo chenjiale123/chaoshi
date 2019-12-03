@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/order/order",
+    "pages/sales/sales",
+    "pages/address/address",
+    "pages/add/add",
+    "pages/addressAdd/addressAdd",
+    "pages/addressEdit/addressEdit",
+      "pages/recharge/recharge",
+      "pages/record/record",
+        "pages/detail/detail",
+        "pages/select/select",
+        "pages/select1/select1",
+        "pages/shop/shop",
+        "pages/shopDetail/shopDetail"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#F3B100",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "image/hdhcssss@2x.png",
+        "iconPath": "image/dhcssss@2x.png",
+        "pagePath": "pages/index/index",
+        "text": "兑换超市"
+      },
+      {
+        "selectedIconPath": "image/hscccc@2x.png",
+        "iconPath": "image/scccc@2x.png",
+        "pagePath": "pages/shop/shop",
+        "text": "商城"
+      },
+      {
+        "selectedIconPath": "image/hgrzxxxx@2x.png",
+        "iconPath": "image/grzxxxx@2x.png",
+        "pagePath": "pages/mine/mine",
+        "text": "个人中心"
+      }
+    ]
+  }
+  
+}

@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top">
+    <image src="../../image/bj@2x.png"></image>
+    <view class="topIn">
+      <image src="../../image/dhcs@2x.png" class="title"></image>
+      <image src="../../image/ceng@2x.png" class="foot"></image>
+    </view>
+
+
+  </view>
+  <view class="main">
+    <view class="ul" bindtap="detail" wx:for="{{list}}" data-id="{{item.id}}" data-icon="{{item.cardLogo}}" data-name="{{item.cardName}}">
+      <view class="in">
+        <image src="{{api}}{{item.cardLogo}}"></image>
+        <text>{{item.cardName}}</text>
+      </view>
+    </view>
+
+  </view>
+
+
+
+  <!-- <view class="footer">
+    <view class="footIn">
+      <text  class="etc" >兑换超市</text> <text>|</text>
+       <text bindtap="shop">商城</text> <text>|</text>
+      <text  bindtap="mine" >个人中心</text> 
+    </view>
+  </view> -->
+
+
+  <view class="shouquan" wx:if="{{login}}">
+
+
+    <view class="quan">
+      <text>福联小程序申请一下权限：</text>
+      <text>获取你的公开信息（头像和昵称等）</text>
+      <button class='btn' type='primary' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 授权登录 </button>
+    </view>
+  </view>
+
+
+  <!-- <view class="shouquan" wx:if="{{login1}}">
+
+
+    <view class="quan">
+      <text>XXXXXX小程序申请一下权限：</text>
+      <text>获取你的手机号</text>
+      <button class='btn' type='primary' open-type="getPhoneNumber" bindgetuserinfo="getPhoneNumber"> 手机号授权 </button>
+    </view>
+  </view> -->
+</view>

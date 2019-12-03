@@ -1,0 +1,25 @@
+<!--pages/shopDetail/shopDetail.wxml-->
+<view class="container">
+
+<view class="top">
+<image src="{{api}}{{img}}"></image>
+</view>
+
+<view class="detail">
+<view class="detailIn">
+<view class="in">
+<text class="title">{{pro}}</text>
+<text class="shop">{{dis}}</text>
+</view>
+</view>
+</view>
+
+<view class="tp">
+<view >
+<text>商品详情</text>
+</view>
+<image wx:for="{{image}}" src="{{api}}{{item}}"></image>
+
+</view>
+<button bindtap="buy">立即购买</button>
+</view>

@@ -1,0 +1,112 @@
+/* pages/detail/detail.wxss */
+.main{
+  width: 96%;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 20rpx;
+}
+.ul{
+  width: 100%;
+  background: #fff;
+  height:158rpx;
+background:rgba(255,255,255,1);
+box-shadow:0px 0px 20rpx 0px rgba(0, 0, 0, 0.04);
+border-radius:10rpx;
+margin-bottom: 20rpx;
+}
+.ul image{
+  width: 238rpx;
+  height: 158rpx;
+}
+.ul text{
+  display: inline-block;
+  width: 400rpx;
+  height: 158rpx;
+  line-height: 158rpx;
+  text-align: center;
+  font-size:32rpx;
+font-family:PingFang SC;
+font-weight:bold;
+color:rgba(51,51,51,1);
+float: right;
+}
+.container>text{
+  display: block;
+  font-size:22rpx;
+font-family:PingFang SC;
+font-weight:500;
+color:rgba(51,51,51,1);
+margin-left: 3%
+}
+.pay{
+width: 94%;
+height: auto;
+overflow: hidden;
+margin: 0 auto;
+margin-top: 80rpx;
+}
+.pay>text{
+  display: block;
+  font-size:28rpx;
+font-family:PingFang SC;
+font-weight:bold;
+color:rgba(51,51,51,1);
+
+}
+.button{
+  display: flex;
+  margin-top: 30rpx;
+  justify-content: space-between;
+  flex-wrap: wrap
+}
+.button>.checked_button{
+  display: block;
+  width:210rpx;
+height:150rpx;
+background:rgba(243,177,0,1);
+border-radius:10rpx;
+font-size:32rpx;
+font-family:PingFang SC;
+font-weight:bold;
+color:rgba(255,255,255,1);
+text-align: center;
+margin-top: 30rpx;
+overflow: hidden;
+padding-top: 30rpx;
+box-sizing: border-box
+}
+.button>.normal_button{
+  display: block;
+  width:210rpx;
+height:150rpx;
+background:rgba(240,240,240,1);
+border-radius:10rpx;
+font-size:32rpx;
+font-family:PingFang SC;
+font-weight:bold;
+color:rgb(0, 0, 0);
+text-align: center;
+margin-top: 30rpx;
+overflow: hidden;
+padding-top: 30rpx;
+box-sizing: border-box
+}
+button{
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100%!important;
+  height: 98rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background:rgba(243,177,0,1);
+  font-size:32rpx;
+font-family:PingFang SC;
+font-weight:bold;
+color:rgba(255,255,255,1);
+text-align: center;
+line-height: 98rpx;
+}

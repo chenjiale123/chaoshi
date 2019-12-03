@@ -1,0 +1,25 @@
+<!--pages/record/record.wxml-->
+<view class="container">
+<view class="main">
+
+<view class="ul" wx:for="{{list}}">
+<view class="in">
+<view class="left">
+<text>兑换时间：</text>
+<text>兑换金额：</text>
+<text>兑换产品：</text>
+</view>
+<view class="right">
+<text class="etc">{{item.createTime}}</text>
+<text>{{item.conversionPrice}}</text>
+<text>{{item.cardName}}</text>
+</view>
+</view>
+</view>
+
+</view>
+
+
+
+
+</view>

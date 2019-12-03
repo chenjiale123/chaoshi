@@ -1,0 +1,50 @@
+<view class='whole'>
+  <!-- <view class="contain"> -->
+  <form>
+    <view class='bj'>
+      <view class="contain">
+        <input class='pl' placeholder='收货人' value="{{people1}}" bindinput="people"></input>
+        <!-- <image class='lx' src='../../image/notebook@2x.png'></image> -->
+        <input class='ph' placeholder='手机号码' value="{{phone1}}" bindinput="phone"></input>
+        <input placeholder="选择" value="{{province}}-{{city}}-{{county}}" focus="{{focus}}" bindfocus="open" class="ad" bindinput="ad" />
+        <picker>
+        </picker>
+
+        <textarea placeholder='详细地址：如道路、门牌号、小区、楼栋号、单元室等' value="{{detail1}}" bindinput="detail"></textarea>
+      </view>
+    </view>
+    <view class='bj'>
+      <view class="contain">
+        <view class='moren'>
+          <text>设为默认地址</text>
+          <switch bindchange="kai" value="{{kai1}}" checked="{{kai1}}"></switch>
+        </view>
+      </view>
+      <button bindtap="save">保存</button>
+    </view>
+  </form>
+
+  <!-- </view> -->
+
+  <view class="zhezao" wx:if="{{condition}}">
+    <view  class="citypicker">
+      <picker-view indicator-style="height: 50px;" style="width: 100%; height: 250px;position:absolute;bottom:0" value="{{value}}" bindchange="bindChange" class="citybody">
+        <view class="cityheader">
+          <view bindtap="open" class="city-cancel">取消</view>
+          <view bindtap="open" class="city-true">确定</view>
+        </view>
+        <picker-view-column>
+          <view wx:for="{{provinces}}" wx:key="item" style="line-height: 50px;text-align:center; margin:0 auto;">{{item}}</view>
+        </picker-view-column>
+        <picker-view-column>
+          <view wx:for="{{citys}}" wx:key="item" style="line-height: 50px;text-align:center;margin:0 auto;">{{item}}</view>
+        </picker-view-column>
+        <picker-view-column>
+          <view wx:for="{{countys}}" wx:key="item" style="line-height: 50px;text-align:center;margin:0 auto;">{{item}}</view>
+        </picker-view-column>
+      </picker-view>
+    </view>
+  </view>
+
+</view>
+

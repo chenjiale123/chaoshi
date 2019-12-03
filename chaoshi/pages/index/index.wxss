@@ -1,0 +1,121 @@
+.top{
+  width: 100%;
+  height: 306rpx;
+  position: relative
+}
+.top>image{
+  width: 100%;
+  height: 100%;
+
+
+}
+.top>.topIn{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden
+}
+.top>.topIn>.title{
+width: 254rpx;
+height: 46rpx;
+margin-top: 64rpx;
+margin-left: 3%
+
+}
+.top>.topIn>.foot{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 178rpx;
+}
+.main{
+  width: 96%;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  top: -130rpx;
+}
+.ul{
+  width: 100%;
+  background: #fff;
+  height:158rpx;
+background:rgba(255,255,255,1);
+box-shadow:0px 0px 20rpx 0px rgba(0, 0, 0, 0.04);
+border-radius:10rpx;
+margin-bottom: 20rpx;
+}
+.ul image{
+  width: 238rpx;
+  height: 158rpx;
+}
+.ul text{
+  display: inline-block;
+  width: 400rpx;
+  height: 158rpx;
+  line-height: 158rpx;
+  text-align: center;
+  font-size:32rpx;
+font-family:PingFang SC;
+font-weight:bold;
+color:rgba(51,51,51,1);
+float: right;
+}
+.footer{
+  width:100%;
+height:98rpx;
+background:rgba(255,255,255,1);
+position: fixed;
+bottom: 0;
+}
+.footer>.footIn{
+width: 65%;
+height: 100%;
+display: flex;
+margin: 0 auto;
+justify-content: space-between;
+margin-top: 30rpx;
+}
+.footer>.footIn>text{
+  font-size:26rpx;
+font-family:PingFang SC;
+font-weight:500;
+color:rgb(0, 0, 0);
+}
+.footer>.footIn>.etc{
+color:rgba(243,177,0,1);
+}
+
+.shouquan{
+  width: 100%;
+  height: 100%;
+position: absolute;
+top: 0;left: 0;
+background: rgba(0, 0, 0, 0.4);
+
+}
+.quan{
+  border-radius: 8rpx;
+  width: 80%;
+  height: 300rpx;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -40%;
+  margin-top: -150rpx;
+text-align: center
+}
+.quan>text{
+  display: block;
+  margin-top: 20rpx;
+  font-size: 26rpx;
+  
+
+}
+.quan>button{
+  margin-top: 40rpx;
+}

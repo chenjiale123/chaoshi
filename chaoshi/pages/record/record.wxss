@@ -1,0 +1,44 @@
+/* pages/record/record.wxss */
+.main{
+  width: 94%;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+.main>.ul{
+  width:100%;
+height:172rpx;
+background:rgba(255,255,255,1);
+border-radius:10rpx;
+margin-bottom: 20rpx;
+}
+.left{
+  float: left;
+  
+}
+.left>text{
+  display: block;
+  font-size:26rpx;
+font-family:PingFang SC;
+font-weight:500;
+color:rgba(51,51,51,1);
+margin-top: 20rpx
+}
+.right{
+  float: right
+}
+.right>text{
+  display: block;
+  text-align: right;
+  
+  font-size:26rpx;
+font-family:PingFang SC;
+font-weight:500;
+color:rgba(102,102,102,1);
+margin-top: 20rpx
+
+}
+.right>.etc{
+  color:rgba(249,50,81,1);
+}

@@ -1,0 +1,87 @@
+/* pages/shopDetail/shopDetail.wxss */
+.top{
+  width: 100%;
+  height: 406rpx;
+    overflow: hidden
+
+}
+.top>image{
+  width: 100%;
+  height: 200%;
+
+}
+.detail{
+  width: 100%;
+  height: 127rpx;
+}
+.detailIn{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: #fff;
+}
+.title{margin-top: 20rpx;
+  display: block;
+  font-size:26rpx;
+font-family:PingFang SC;
+font-weight:bold;
+color:rgba(51,51,51,1);
+}
+.shop{
+  display: block;
+margin-top: 20rpx;
+  font-size:24rpx;
+font-family:PingFang SC;
+font-weight:500;
+color:rgba(51,51,51,1);
+height: 36rpx;
+overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
+.tp{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 22rpx;
+}
+.tp>view{
+  width: 100%;
+  height: 86rpx;
+  overflow: hidden;
+  background: #fff;
+}
+.tp>view>text{
+  display: block;
+  margin-left: 3%;
+  font-size:28rpx;
+  margin-top: 20rpx;
+font-family:PingFang SC;
+font-weight:bold;
+color:rgba(51,51,51,1);
+}
+.tp>image{
+  display:block;
+  width: 100%;
+  height:720rpx ;
+  padding: 0;
+  margin: 0;
+
+}
+button{
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100%!important;
+  height: 98rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background:rgba(243,177,0,1);
+  font-size:32rpx;
+font-family:PingFang SC;
+font-weight:bold;
+color:rgba(255,255,255,1);
+text-align: center;
+line-height: 98rpx;
+}

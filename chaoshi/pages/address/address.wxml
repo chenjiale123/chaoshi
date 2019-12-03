@@ -1,0 +1,56 @@
+<!--pages/address/address.wxml-->
+<view class="container">
+
+  <view class="top">
+    <view class="in">
+      <text class="name">张世豪</text>
+      <text class="phone">186****7662</text>
+      <text class="tag">默认</text>
+      <image class="address" src="../../image/grayjump@2x.png"></image>
+      <text class="ko">地址：江西省九江市濂溪区十里街道长虹大道馨苑山庄渔夫码头</text>
+    </view>
+    <image class="bom" src="../../image/article@2x.png"></image>
+
+  </view>
+  <view class="main">
+    <view class="in">
+      <image class="tp" src="../../image/tx.jpg"></image>
+      <view class="intro">
+        <text class="title">湘贞缘农庄 冷冻杨梅 新鲜速冻杨梅 冰镇杨梅 冰杨梅汁...</text>
+        <text class="pri">￥299.00</text>
+
+        <view class="add">
+          <image src="../../image/colorReduction@2x.png"></image>
+          <text>2</text>
+          <image src="../../image/coloradd@2x.png"></image>
+        </view>
+      </view>
+    </view>
+
+  </view>
+  <view class="dis">
+    <view class="in">
+      <view class="sum">
+        <text>商品金额</text>
+        <text>¥299.00</text>
+      </view>
+      <view class="order">
+        <text>订单号</text>
+        <text>168951616196068161</text>
+      </view>
+      <view class="freight">
+        <text>运费</text>
+        <text>+¥0.00</text>
+      </view>
+    </view>
+    <view class="all">
+      <view class="txt">
+        商品总价:
+        <text>￥299.00</text>
+      </view>
+
+      <button>提交订单</button>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,34 @@
+<!--pages/shop/shop.wxml-->
+<view class="container">
+  <view class="top">
+    <image src="../../image/scbj@2x1.png"></image>
+  </view>
+  <view class="center">
+    <image src="../../image/nhdlb@2x.png"></image>
+
+  </view>
+
+  <view class="shop">
+    <view class="shopIn">
+
+      <view class="goods" wx:for="{{list}}" bindtap="detail" data-id="{{item.id}}">
+        <image src="{{api}}{{item.imageThumb}}"></image>
+        <text class="js">{{item.goodsName}}</text> 
+        <text class="etc">{{item.goodsPrice}}提货豆</text>
+
+      </view>
+
+
+    </view>
+
+  </view>
+
+
+  <!-- <view class="footer">
+    <view class="footIn">
+      <text bindtap="index" >兑换超市</text> <text>|</text>
+       <text  class="etc">商城</text> <text>|</text>
+      <text  bindtap="mine" >个人中心</text> 
+    </view>
+  </view> -->
+</view>
