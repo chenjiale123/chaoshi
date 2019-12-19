@@ -2,17 +2,21 @@
 .top{
   width: 100%;
   height: 406rpx;
-    overflow: hidden
+    overflow: hidden;
+
 
 }
 .top>image{
-  width: 100%;
-  height: 200%;
+max-width: 100%;
+max-height: 100%;
+display: block;
+margin: 0 auto;
 
 }
 .detail{
   width: 100%;
-  height: 127rpx;
+  height: auto;
+  overflow: hidden
 }
 .detailIn{
   width: 100%;
@@ -34,24 +38,26 @@ margin-top: 20rpx;
 font-family:PingFang SC;
 font-weight:500;
 color:rgba(51,51,51,1);
-height: 36rpx;
-overflow: hidden;
-text-overflow:ellipsis;
-white-space: nowrap;
+height: auto;
+margin-bottom: 20rpx;
 }
 .tp{
   width: 100%;
   height: auto;
   overflow: hidden;
   margin-top: 22rpx;
+  padding-bottom: 98rpx;
+    background: #fff;
+ 
 }
-.tp>view{
+.tp>.detail1{
   width: 100%;
   height: 86rpx;
   overflow: hidden;
-  background: #fff;
+
+
 }
-.tp>view>text{
+.tp>.detail1>text{
   display: block;
   margin-left: 3%;
   font-size:28rpx;
@@ -59,23 +65,66 @@ white-space: nowrap;
 font-family:PingFang SC;
 font-weight:bold;
 color:rgba(51,51,51,1);
-}
-.tp>image{
-  display:block;
-  width: 100%;
-  height:720rpx ;
-  padding: 0;
-  margin: 0;
 
 }
-button{
+.img{
+  width: 100%;
+  height: 100%;
+     padding: 0 20rpx;
+
+box-sizing: border-box;
+/* overflow: auto */
+}
+.img>image{
+  display:block;
+  width: 100%;
+  /* min-height:500rpx ; */
+  padding: 0;
+  margin: 0;
+  /* height: auto; */
+  max-height: 100%;
+  min-height: 100%;
+  height: 100%
+
+}
+.button{
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+   height: 98rpx;
+   background: #fff
+}
+.hoc {
+    color: #fff !important;
+  background:linear-gradient(-8deg,rgba(61,179,163,1) 0%,rgba(145,230,115,1) 100%);
+ 
+}
+.gouwu{
   padding: 0;
   margin: 0;
   display: block;
-  width: 100%!important;
+  width: 33.9%!important;
   height: 98rpx;
-  position: fixed;
+  position: absolute;
   left: 0;
+  bottom: 0;
+    background:linear-gradient(-8deg,rgba(61,179,163,1) 0%,rgba(145,230,115,1) 100%);
+  font-size:32rpx;
+font-family:PingFang SC;
+font-weight:bold;
+color:rgba(255,255,255,1);
+text-align: center;
+line-height: 98rpx;
+}
+.buy{
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 66%!important;
+  height: 98rpx;
+  position: absolute;
+  right: 0;
   bottom: 0;
   background:rgba(243,177,0,1);
   font-size:32rpx;
@@ -84,4 +133,35 @@ font-weight:bold;
 color:rgba(255,255,255,1);
 text-align: center;
 line-height: 98rpx;
+}
+.shouquan{
+  width: 100%;
+  height: 100%;
+position: absolute;
+top: 0;left: 0;
+background: rgba(0, 0, 0, 0.4);
+z-index: 999999
+
+}
+.quan{
+  border-radius: 8rpx;
+  width: 80%;
+  height: 300rpx;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -40%;
+  margin-top: -150rpx;
+text-align: center
+}
+.quan>text{
+  display: block;
+  margin-top: 20rpx;
+  font-size: 26rpx;
+  
+
+}
+.quan>button{
+  margin-top: 40rpx;
 }

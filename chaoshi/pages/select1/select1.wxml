@@ -1,6 +1,8 @@
 <!--pages/add/add.wxml-->
 <view class="container">
-
+  <view class="fuhao" bindtap="add">
+<image src="../../image/add@2x.png"></image>
+</view>
   <view class="list">
      <radio-group class="radio-group" bindchange="radioChange">
       <view class="top" wx:for="{{list}}">
@@ -8,23 +10,26 @@
           <text class="name">{{item.consigneeName}}</text>
           <text class="phone">{{item.consigneePhone}}</text>
           <text class="tag" wx:if="{{item.isDefault==0}}">默认</text>
-          <image class="address" src="../../image/grayjump@2x.png"></image>
+      
           <text class="ko">地址：{{item.areaIdPath}}{{item.adsress}}</text>
         </view>
 
         <view class="xuanze">
           <view class="rideo">
             <radio bindtap="radio" checked="{{item.checked}}" bindtap='radio' data-id="{{index}}" value="{{index}}"></radio>
-            设为收货地址
+            <text>   设为收货地址</text>
+         
           </view>
-          <view class="edit">
-            <!-- <view bindtap="edit" data-id="{{index}}">
+         <view class="edit">
+            <view bindtap="edit" data-id="{{index}}">
               <image src="../../image/editor@2x.png"></image>
-              编辑
-            </view> -->
+              
+                 <text>编辑</text>
+            </view>
             <view bindtap="del" data-id="{{item.id}}">
               <image src="../../image/delete@2x.png"></image>
-              删除
+              
+                 <text>删除</text>
             </view>
           </view>
 
@@ -32,6 +37,6 @@
       </view>
     </radio-group>
   </view>
-  <button bindtap="srue" wx:if="{{ad}}">确认兑换地址</button>
-    <button bindtap="xuan" wx:else>确认兑换地址</button>
+  <button bindtap="srue" wx:if="{{ad}}" hover-class="button-hover">确认兑换地址</button>
+    <button bindtap="xuan" wx:else hover-class="button-hover">确认兑换地址</button>
 </view>

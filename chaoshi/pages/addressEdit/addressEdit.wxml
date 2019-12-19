@@ -1,7 +1,7 @@
 <view class='whole'>
   <!-- <view class="contain"> -->
   <form>
-    <view class='bj'>
+    <view class='bj1'>
       <view class="contain">
         <input class='pl' placeholder='收货人' value="{{people1}}" bindinput="people"></input>
         <!-- <image class='lx' src='../../image/notebook@2x.png'></image> -->
@@ -14,13 +14,13 @@
       </view>
     </view>
     <view class='bj'>
-      <view class="contain">
+      <view class="contain1">
         <view class='moren'>
           <text>设为默认地址</text>
           <switch bindchange="kai" value="{{kai1}}" checked="{{kai1}}"></switch>
         </view>
       </view>
-      <button bindtap="save">保存</button>
+      <view bindtap="save" class="button">保存</view>
     </view>
   </form>
 

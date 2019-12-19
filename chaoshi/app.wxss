@@ -20,3 +20,13 @@ button::after{
   position: relative
 }
 
+
+.button-hover {
+    color: #fff !important;
+    background:rgba(243,177,0,1)!important;
+ 
+}
+.hover{
+      color: #fff !important;
+    background:rgba(0,192,97,1)!important;
+}

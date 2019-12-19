@@ -186,6 +186,11 @@ Page({
        wx.navigateBack({
          delta: 1,
        })
+      }else{
+        wx.showToast({
+          title: res.msg,
+          icon:'none'
+        })
       }
 
     }).catch(e => {

@@ -1,4 +1,4 @@
-const baseUrl = 'http://120.206.184.170:8887/';
+const baseUrl = 'https://fl.app.qianyipan.com/';
 const url = 'http://dev.static.qianyipan.com/'
 
 const http = ({ url = '', param = {}, ...other } = {}) => {

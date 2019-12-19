@@ -13,8 +13,10 @@
         "pages/detail/detail",
         "pages/select/select",
         "pages/select1/select1",
+          "pages/select2/select2",
         "pages/shop/shop",
-        "pages/shopDetail/shopDetail"
+        "pages/shopDetail/shopDetail",
+          "pages/shopCar/shopCar"
 
   ],
   "window": {

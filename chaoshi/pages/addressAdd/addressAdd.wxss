@@ -16,9 +16,23 @@ page{
   width: 90%;
   margin: 0 auto;
   position: relative;
+ 
 }
+.contain1{
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+   background: #fff
+}
+
 .bj{
-  background: #fff;
+   background:rgba(242,242,242,1);
+  margin-top: 20rpx;
+  width: 100%;
+  
+}
+.bj1{
+   background:#fff;
   margin-top: 20rpx;
   width: 100%;
   
@@ -28,10 +42,10 @@ page{
   height: 110rpx;
   border-bottom: 1px solid #e6e6e6;
 }
-.pl[placeholder],.ph[placeholder],.ad[placeholder],.bq[placeholder]{
+input[placeholder]{
   font-size:28rpx;
 
-font-weight:500;
+
 color:rgba(102,102,102,1);
 line-height: 110rpx;
 }
@@ -45,8 +59,10 @@ color:rgba(102,102,102,1);
 margin-top: 42rpx;
 }
 .moren{
+  width: 90%;
+  margin: 0 auto;
   margin-top: 40rpx;
-  overflow: auto
+  overflow: hidden
 
 }
 .moren>text{
@@ -79,15 +95,19 @@ position: absolute;
 right: 0;
 top: 0rpx;
 }
-button{
+.button{
   display: block;
   width: 100%;
   height: 110rpx;
-  margin-top: 30rpx;
+  margin-top: 40rpx;
   line-height: 110rpx;
   text-align: center;
   font-size:32rpx;
   background: #fff;
+
+font-family:PingFang SC;
+font-weight:500;
+
 
 font-weight:500;
 color:rgba(26,26,26,1);
@@ -103,7 +123,7 @@ top: 265rpx;
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 480rpx;
+  height: 400rpx;
   background: #fff;
   z-index: 99;
   overflow: hidden
@@ -121,7 +141,8 @@ width: 100%;
 position: absolute;
   color: #F3B100;
   right: 34rpx;
-  z-index: 9999
+  z-index: 9999;
+  top: 30rpx
 }
 .city-cancel{
   color: #F3B100;
@@ -130,7 +151,8 @@ position: absolute;
   position: absolute;
   
   left: 34rpx;
-    z-index: 9999
+    z-index: 9999;
+      top: 30rpx
 }
 
 .open{

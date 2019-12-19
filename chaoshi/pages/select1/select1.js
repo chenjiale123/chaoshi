@@ -10,6 +10,7 @@ Page({
 
   },
   add: function () {
+ 
     wx.navigateTo({
       url: '/pages/addressAdd/addressAdd',
       success: function (res) { },
@@ -78,7 +79,7 @@ Page({
 
       userId: userId,
       goodsId: this.data.id,
-      orderMoney: this.data.price1,
+      orderMoney: this.data.price,
       goodsNum: this.data.num,
       consigneeName: this.data.list1.consigneeName,
       consigneePhone: this.data.list1.consigneePhone,
@@ -113,7 +114,17 @@ Page({
     api._get('/address/queryAddress?page=1&userId=' + userId).then(res => {
       console.log(res)
       if (res.isSuc == true) {
-        res.data[0].checked = "true"
+        if (res.data == "") {
+          wx.showToast({
+            title: '请先添加收货地址',
+            icon: "none"
+          })
+          that.setData({
+            list: res.data
+
+          })
+        } else {
+          res.data[0].checked = "true"
 
         that.setData({
           list: res.data
@@ -123,7 +134,7 @@ Page({
           list1: that.data.list[0]
 
         })
-
+        }
       }
 
 
@@ -139,14 +150,18 @@ Page({
     var that = this
 
 
-
-
+    const app = getApp();
+    let price1 = app.globalData.price1
+    let id2 = app.globalData.id2
+    let num = app.globalData.num
+ 
+    console.log(app.globalData.price1)
 
       this.setData({
   
-        id: options.id,
-        price1: options.price,
-        num: options.num
+        id: id2,
+        price: price1,
+        num: num
       })
 
    this.shuju()

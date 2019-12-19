@@ -1,25 +1,39 @@
 <!--pages/shopDetail/shopDetail.wxml-->
 <view class="container">
 
-<view class="top">
-<image src="{{api}}{{img}}"></image>
-</view>
 
-<view class="detail">
-<view class="detailIn">
-<view class="in">
-<text class="title">{{pro}}</text>
-<text class="shop">{{dis}}</text>
-</view>
-</view>
-</view>
 
-<view class="tp">
-<view >
-<text>商品详情</text>
-</view>
-<image wx:for="{{image}}" src="{{api}}{{item}}"></image>
+  <view class="shouquan" wx:if="{{login}}">
+    <view class="quan">
+      <text>福连小程序申请一下权限：</text>
+      <text>获取你的公开信息（头像和昵称等）</text>
+      <button class='btn' type='primary' open-type="getUserInfo" bindgetuserinfo="getUserInfo" hover-class="hover"> 授权登录 </button>
+    </view>
+  </view>
+  <view class="top">
+    <image mode="aspectFit" src="{{api}}{{img}}"></image>
+  </view>
 
+  <view class="detail">
+    <view class="detailIn">
+      <view class="in">
+        <text class="title">{{pro}}</text>
+        <text class="shop">{{dis}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="tp">
+    <view class="detail1">
+      <text>商品详情</text>
+    </view>
+    <view class="img">
+    <image wx:for="{{image}}" src="{{api}}{{item}}" mode="widthFix"></image>
 </view>
-<button bindtap="buy">立即购买</button>
+  </view>
+  <view class="button">
+  <button class="gouwu" hover-class="hoc" bindtap="car">加入购物车</button>
+   <button bindtap="buy" class="buy">立即购买</button>
+  </view>
+ 
 </view>

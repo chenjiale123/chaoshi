@@ -38,7 +38,7 @@
 }
 
 .goods{
-  width:330rpx;
+  width:342rpx;
 height:auto;
 background:rgba(255,255,255,1);
 border-radius:10rpx;
@@ -46,12 +46,12 @@ margin-top: 20rpx;
 overflow: hidden
 }
 .goods>image{
-  width:330rpx;
-height:330rpx;
+  width:342rpx;
+height:342rpx;
 border-radius:10rpx;
 }
 .goods>.js{
-  width: 94%;
+  width: 93%;
   margin: 0 auto;
   font-size:26rpx;
 font-family:PingFang SC;
@@ -69,9 +69,9 @@ overflow: hidden;
 .goods>.etc{
   width: 94%;
   margin: 0 auto;
-  margin-top: 15rpx;
+  margin-top: 20rpx;
 display: block;
-  font-size:20rpx;
+  font-size:30rpx;
 font-family:PingFang SC;
 font-weight:500;
 color:rgba(255,0,0,1)!important;

@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    page:1
   },
 
   /**
@@ -35,7 +35,34 @@ Page({
       console.log(e)
     })
   },
+  
 
+  onfrash: function (pageNo) {
+    var that = this
+    var userId = wx.getStorageSync('user').loginId || 0
+
+
+
+  
+    api._get('conversionCardLog/selectForRecord?page=' + pageNo+'&userId=' + userId).then(res => {
+          console.log(res)
+          if (res.isSuc == true) {
+            this.setData({
+              page: pageNo, //当前的页号
+              list: this.data.list.concat(res.data.forRecordList)
+            })
+          }
+        }).catch(e => {
+          console.log(e)
+        })
+ 
+
+
+
+  
+
+
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -75,7 +102,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    this.onfrash(this.data.page + 1)
   },
 
   /**

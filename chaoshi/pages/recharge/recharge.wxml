@@ -4,5 +4,5 @@
     <text>充值码</text>
     <input placeholder="请输入充值码" bindinput="pay"></input>
   </view>
-<button bindtap="charge">充值</button>
+<button bindtap="charge" hover-class="button-hover">充值</button>
 </view>

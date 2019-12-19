@@ -1,7 +1,7 @@
 <view class='whole'>
   <!-- <view class="contain"> -->
   <form>
-    <view class='bj'>
+    <view class='bj1'>
       <view class="contain">
         <input class='pl' placeholder='收货人' bindinput="people"></input>
         <!-- <image class='lx' src='../../image/notebook@2x.png'></image> -->
@@ -10,17 +10,18 @@
         <picker>
         </picker>
 
-        <textarea placeholder='详细地址：如道路、门牌号、小区、楼栋号、单元室等' bindinput="detail"></textarea>
+        <textarea placeholder='详细地址：如道路、门牌号、小区、楼栋号、单元室等' bindinput="detail" class="tec"></textarea>
       </view>
     </view>
     <view class='bj'>
-      <view class="contain">
+
+      <view class="contain1">
         <view class='moren'>
           <text>设为默认地址</text>
           <switch bindchange="kai"></switch>
         </view>
       </view>
-      <button bindtap="save">保存</button>
+      <view bindtap="save" class="button">保存</view>
     </view>
   </form>
 

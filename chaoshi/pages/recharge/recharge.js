@@ -27,21 +27,21 @@ Page({
     }
     api._post('/conversion/addConversion', xinxi).then(res => {
       console.log(res)
-      // if (res.isSuc == true) {
+      if (res.isSuc == true) {
          wx.showToast({
            title: res.msg,
            icon:'none'
          })
-      // }
+ 
       // var user = wx.getStorageSync('user');
       // user.balance = res.data;
       // wx.setStorageSync('user', user)
-      wx.navigateTo({
+      wx.switchTab({
+      
         url: '/pages/mine/mine',
-        success: function(res) {},
-        fail: function(res) {},
-        complete: function(res) {},
+     
       })
+           }
 
     }).catch(e => {
       console.log(e)

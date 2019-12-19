@@ -14,11 +14,11 @@
     </view>
   </view>
 
-  <swiper current="{{currentTab}}" duration="300" bindchange="swiperTab" style='height:{{(list.length+list1.length+list2.length)*158+400}}rpx'>
+  <swiper current="{{currentTab}}" duration="300" bindchange="swiperTab" style='height:{{(list.length+list1.length+list2.length)*158+900}}rpx'>
     <swiper-item>
 
-      <view class="main">
-        <view class="ul" wx:for="{{list}}">
+      <view class="main" >
+        <view class="ul" wx:for="{{list}}" wx:if="{{item.orderType==0}}">
           <view class="in">
             <image src="{{api}}{{item.cardLogo}}"></image>
             <view class="right">
@@ -32,7 +32,24 @@
             </view>
           </view>
         </view>
-   
+      <view class="ul" wx:for="{{list}}" wx:if="{{item.orderType==1}}">
+          <view class="in" wx:for="{{item.shopOrderDtoTwos}}">
+            <image src="{{api}}{{item.imageThumb}}" mode="aspectFit"></image>
+            <view class="right">
+              <text>{{item.goodsName}}</text>
+            
+
+              <text>商品总价格：￥{{item.goodsPrice}}</text>
+              <text class="etc">待发货</text>
+
+
+            </view>
+          </view>
+        </view>
+
+
+
+
       </view>
 
 

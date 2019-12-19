@@ -22,7 +22,7 @@
   width: 120rpx;
   height: 120rpx;
   position: absolute;
-  left: 3%;
+  left: 6%;
   top: 0;
   border-radius: 50%
 }
@@ -56,7 +56,7 @@ left: 198rpx
 .nav{
   margin-top: 30rpx;
   width: 100%;
-  height: 598rpx;
+  height: 698rpx;
   background: #fff;
   padding-top: 40rpx;
   box-sizing: border-box
@@ -169,4 +169,34 @@ color:rgb(0, 0, 0);
 }
 .footer>.footIn>.etc{
 color:rgba(243,177,0,1);
+}
+.shouquan{
+  width: 100%;
+  height: 100%;
+position: absolute;
+top: 0;left: 0;
+background: rgba(0, 0, 0, 0.4);
+z-index: 99999
+}
+.quan{
+  border-radius: 8rpx;
+  width: 80%;
+  height: 300rpx;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -40%;
+  margin-top: -150rpx;
+text-align: center
+}
+.quan>text{
+  display: block;
+  margin-top: 20rpx;
+  font-size: 26rpx;
+  
+
+}
+.quan>button{
+  margin-top: 40rpx;
 }

@@ -1,12 +1,27 @@
 <view class="container">
 
+  <view class="shouquan" wx:if="{{login}}">
+    <view class="quan">
+      <text>福连小程序申请一下权限：</text>
+      <text>获取你的公开信息（头像和昵称等）</text>
+      <button class='btn' type='primary' open-type="getUserInfo" bindgetuserinfo="getUserInfo" hover-class="hover"> 授权登录 </button>
+    </view>
+  </view>
+
+
+
+
 <view class="bj">
  <image src="../../image/bj@2x.png"></image>
   <view class="message">
-  <image src="{{api}}{{icon}}"></image>
-  <text class="nc">{{name}}</text>
-    <text class="phone">手机号： 123456789</text>
-  <text class="id">提货豆：{{balance}}</text>
+  <image src="{{api}}{{icon}}"  wx:if="{{name1}}" ></image>
+   <image wx:else src="../../image/-wo01@2x.png"></image>
+
+  <text class="nc" wx:if="{{name1}}">{{name}}</text>
+    <text class="nc" wx:else bindtap="login2">暂未登录</text>
+    <text class="phone">手机号： 暂无</text>
+  <text class="id" wx:if="{{name1}}">提货豆：{{balance}}</text>
+    <text class="id" wx:else>提货豆：登录后查看</text>
 
   
   </view>
@@ -28,6 +43,10 @@
 </view>
 <view class="record" bindtap="address">
 <text >收货地址</text>
+<image src="../../image/grayjump@2x.png"></image>
+</view>
+<view class="record" bindtap="gouwu">
+<text >购物车</text>
 <image src="../../image/grayjump@2x.png"></image>
 </view>
 <view class="service" bindtap="sales">

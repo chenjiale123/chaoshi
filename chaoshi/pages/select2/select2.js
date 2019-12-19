@@ -1,8 +1,6 @@
 // pages/add/add.js
 const api = require('../../utils/api.js')
 
-let price1
-
 Page({
 
   /**
@@ -12,7 +10,7 @@ Page({
 
   },
   add: function () {
-    console.log('2222')
+
     wx.navigateTo({
       url: '/pages/addressAdd/addressAdd',
       success: function (res) { },
@@ -25,13 +23,13 @@ Page({
     that.setData({
       api: api.url
     })
-    var userId = wx.getStorageSync('user').loginId || ""
+    var userId = wx.getStorageSync('user').loginId || 1
 
     api._post('/address/delAddress?id=' + e.currentTarget.dataset.id).then(res => {
       console.log(res)
       if (res.isSuc == true) {
         that.shuju()
-      
+
       }
 
 
@@ -60,7 +58,6 @@ Page({
     this.setData({
       index1: e.currentTarget.dataset.id
     })
-
   },
   radioChange(e) {
     console.log(e.detail.value)
@@ -72,36 +69,32 @@ Page({
     })
     console.log(this.data.list1)
   },
-
-  srue:function(){
+  xuan: function () {
     this.setData({
       api: api.url
-    
     })
     var userId = wx.getStorageSync('user').loginId || 1
- 
-
-
 
     var xinxi = {
- 
+
       userId: userId,
-      cardValueId:this.data.id ,
+      shopCarIds: this.data.carId,
+      orderMoney: this.data.all,
+ 
       consigneeName: this.data.list1.consigneeName,
       consigneePhone: this.data.list1.consigneePhone,
       consigneeAddress: this.data.list1.areaIdPath + this.data.list1.adsress
     }
-    console.log(xinxi)
-    api._post('/supermarketCard/conversionCard', xinxi).then(res => {
+    api._post('/shopCarts/placeTheOrder', xinxi).then(res => {
       console.log(res)
       if (res.isSuc == true) {
         wx.navigateTo({
           url: '/pages/order/order',
         })
-      }else{
+      } else {
         wx.showToast({
           title: res.msg,
-          icon:"none"
+          icon: "none"
         })
       }
 
@@ -110,28 +103,27 @@ Page({
     })
 
   },
-  shuju:function(){
-    var that=this
+  shuju: function () {
+    var that = this
     that.setData({
       api: api.url
 
     })
-    var userId = wx.getStorageSync('user').loginId || ""
+    var userId = wx.getStorageSync('user').loginId || 1
 
     api._get('/address/queryAddress?page=1&userId=' + userId).then(res => {
       console.log(res)
       if (res.isSuc == true) {
-          
-        if (res.data==""){
+        if (res.data == "") {
           wx.showToast({
             title: '请先添加收货地址',
-            icon:"none"
+            icon: "none"
           })
           that.setData({
             list: res.data
 
           })
-        }else{
+        } else {
           res.data[0].checked = "true"
 
           that.setData({
@@ -143,8 +135,6 @@ Page({
 
           })
         }
-      
-
       }
 
 
@@ -158,24 +148,29 @@ Page({
    */
   onLoad: function (options) {
     var that = this
-   
-   
+
+
     const app = getApp();
-    let price = app.globalData.price;
-    let id1 = app.globalData.id1;
+    let price1 = app.globalData.price1
+    let id2 = app.globalData.id2
+    let num = app.globalData.num
+    let carId = app.globalData.carId
+    let all = app.globalData.all
+    console.log(app.globalData.carId)
 
-    console.log(id1)
+    this.setData({
 
-    that.setData({
-      api: api.url,
-      id:id1,
-      price:price
-  
+      id: id2,
+      price: price1,
+      num: num,
+      carId: carId,
+      all:all
     })
 
-  
-    that.shuju()
- 
+    this.shuju()
+
+
+
   },
 
   /**
